@@ -27,9 +27,25 @@
    <select id="read" parameterType="int" resultType="kr.co.vo.BoardVO">
    		SELECT	BNO,
    				TITLE,
+   				CONTENT,
    				WRITER,
    				REGDATE
    		FROM	MP_BOARD
    		WHERE	BNO = #{BNO}
    </select> 
+   
+   
+    <update id="update" parameterType="kr.co.vo.BoardVO">
+		UPDATE MP_BOARD
+		   SET TITLE    =   #{title},
+		   	   CONTENT  =   #{content}
+		 WHERE BNO = #{BNO} 
+	</update>
+   
+   <delete id = "delete" parameterType="int">
+   		DELETE
+   		FROM	MP_BOARD
+   		WHERE	BNO = #{BNO}
+   </delete>
+   
 </mapper>
