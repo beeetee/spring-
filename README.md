@@ -10,7 +10,7 @@ Spring을 이용한 쇼핑몰 제작 전 간단한 게시판 제작
 # 개발 환경
 1. Eclipse 
 	ver : IDE for Enterprise Java Developers - 2019-12
-2. Java
+2. Java</br>
 	jdk1.8.0_231
 	jre1.8.0_231
 3. Oracle
